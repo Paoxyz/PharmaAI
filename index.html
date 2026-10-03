@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PharmAI — Medicine Locator</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/style.css?v=3"></head><body>
+<a class="skip" href="#app">Skip to content</a>
+<div class="shell">
+<header class="top"><a class="brand" href="#dashboard" aria-label="PharmAI home">
+<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="11" fill="#fff" opacity=".95"/><path d="M14 8h6v6h6v6h-6v6h-6v-6H8v-6h6z" fill="#0f766e"/><circle cx="26" cy="8" r="3" fill="#22d3ee"/></svg><span>PharmAI</span></a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="nav" class="pill" aria-label="Main"></nav>
+<div class="right"><label class="sr" for="portal">Portal</label>
+<select id="portal" class="sel"><option value="consumer">Consumer</option><option value="pharmacy">Pharmacy admin</option><option value="system">System admin</option></select>
+<span class="ai"><i class="dot"></i>AI online</span>
+<div class="dd"><button class="ic" id="bell" aria-label="Notifications">🔔<b>3</b></button><div class="menu" id="bellMenu" hidden></div></div>
+<div class="dd"><button class="avatar" id="usr" aria-label="User menu">MR</button><div class="menu" id="usrMenu" hidden><a href="#support">Account</a><a href="#support">Sign out (demo)</a></div></div></div></header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot">PharmAI helps locate available medicines and alternatives. It does not diagnose conditions or replace advice from a licensed healthcare professional.</footer>
+</div>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mt"><div class="mbox" id="mbox"></div></div>
+<div id="toasts" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="js/data.js?v=3"></script><script src="js/components.js?v=3"></script><script src="js/app.js?v=3"></script></body></html>
